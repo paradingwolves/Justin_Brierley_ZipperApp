@@ -35,6 +35,10 @@ view created
     **testing results: successful**
 time to add a zipper model
 
+problem: cannot install EFCore
+solution: --Version extension
+         --Version 3.1.0 solved my issue
+
 -- 10:25PM --
 successfully added the zipper model
 now time to *scaffold*
@@ -44,3 +48,5 @@ now time to *scaffold*
 -- the date is now 2022-10-09, and after a long reset, we finally have a successful scaffold!
   -> problem: i forgot to add the connection string for ZipperAppContext in appsettings.json
   -> problem: was making a typo in the Startup.ConfigureServices method
+  -> problem: was not making use of the -Context extension in my package manager console to choose which context i wanted to work with
+            -> -Context ZipperAppContext    solved my problem
