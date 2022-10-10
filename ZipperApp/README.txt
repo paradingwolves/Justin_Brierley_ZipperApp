@@ -50,3 +50,8 @@ now time to *scaffold*
   -> problem: was making a typo in the Startup.ConfigureServices method
   -> problem: was not making use of the -Context extension in my package manager console to choose which context i wanted to work with
             -> -Context ZipperAppContext    solved my problem
+
+Date Modified: 2022-10-09
+
+-- 8:35PM --
+time to add database
