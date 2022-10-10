@@ -20,9 +20,33 @@ namespace ZipperApp.Controllers
         }
 
         // GET: Zippers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string zipperCategory, string searchString)
         {
-            return View(await _context.Zipper.ToListAsync());
+            // Use LINQ to get list of categories.
+            IQueryable<string> categoryQuery = from z in _context.Zipper
+                                            orderby z.Category
+                                            select z.Category;
+
+            var zippers = from z in _context.Zipper
+                         select z;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                zippers = zippers.Where(s => s.Name.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(zipperCategory))
+            {
+                zippers = zippers.Where(x => x.Category == zipperCategory);
+            }
+
+            var zipperCategoryVM = new ZipperCategoryViewModel
+            {
+                Category = new SelectList(await categoryQuery.Distinct().ToListAsync()),
+                Zippers = await zippers.ToListAsync()
+            };
+
+            return View(zipperCategoryVM);
         }
 
         // GET: Zippers/Details/5
@@ -34,7 +58,7 @@ namespace ZipperApp.Controllers
             }
 
             var zipper = await _context.Zipper
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(z => z.Id == id);
             if (zipper == null)
             {
                 return NotFound();

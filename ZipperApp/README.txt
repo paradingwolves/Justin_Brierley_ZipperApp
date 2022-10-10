@@ -55,3 +55,18 @@ Date Modified: 2022-10-09
 
 -- 8:35PM --
 time to add database
+database created 
+SeedData.cs class created in Models folder
+SeedData has 10 products and their properties
+have to run to see if seeding data was successful
+        -> seeding: successful
+
+-- 10:00PM --
+upload progress to gitHub
+time to add Search functionality!
+- search by name first
+   ->completed
+     ->test result: success
+
+- search by category next
+    -> success!

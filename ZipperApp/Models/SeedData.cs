@@ -68,15 +68,51 @@ namespace ZipperApp.Models
                         TeethSize = "none",
                         Price = .05M
                     },
+                    new Zipper
+                    {
+                        Name = "Standard Jean Zipper",
+                        Material = "Nylon",
+                        Category = "Fashion",
+                        Colour = "Brown",
+                        TeethSize = "small",
+                        Price = 3.45M
+                    },
+                    new Zipper
+                    {
+                        Name = "Sweater Zipper",
+                        Material = "Nylon",
+                        Category = "Fashion",
+                        Colour = "black",
+                        TeethSize = "small",
+                        Price = 3.65M
+                    },
+                    new Zipper
+                    {
+                        Name = "Shoe Zipper",
+                        Material = "Polyester",
+                        Category = "Fashion",
+                        Colour = "black",
+                        TeethSize = "extra-small",
+                        Price = 1.65M
+                    },
+                    new Zipper
+                    {
+                        Name = "Boot Zipper",
+                        Material = "Polyester",
+                        Category = "Fashion",
+                        Colour = "black",
+                        TeethSize = "small",
+                        Price = 2.05M
+                    },
 
                     new Zipper
                     {
                         Name = "ZipIts",
-                        Material = "aluminum",
-                        Category = "Recreational",
-                        Colour = "Grey",
+                        Material = "Polyester",
+                        Category = "Fashion",
+                        Colour = "White",
                         TeethSize = "small",
-                        Price = 8.99M
+                        Price = 1.99M
                     }
                 );
                 context.SaveChanges();
