@@ -70,3 +70,15 @@ time to add Search functionality!
 
 - search by category next
     -> success!
+
+Date Modified: 2022-10-10
+
+-- 3:00PM --
+I forgot to add a rating field, so I will add that next
+    -> success! users can now edit product ratings
+
+-- 3:15PM --
+time for validation
+    -> validation successfully added
+
+Time for the fun part!! Adding Styles!!

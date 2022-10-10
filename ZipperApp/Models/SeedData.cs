@@ -28,7 +28,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "Gold",
                         TeethSize = "small",
-                        Price = 299.99M
+                        Price = 299.99M,
+                        Rating = 9.5M
                     },
                     new Zipper
                     {
@@ -37,7 +38,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "Gold",
                         TeethSize = "medium",
-                        Price = 349.99M
+                        Price = 349.99M,
+                        Rating = 8.9M
                     },
                     new Zipper
                     {
@@ -46,7 +48,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "Gold",
                         TeethSize = "large",
-                        Price = 399.99M
+                        Price = 399.99M,
+                        Rating = 9.25M
                     },
 
                     new Zipper
@@ -56,7 +59,8 @@ namespace ZipperApp.Models
                         Category = "Magic",
                         Colour = "Purple",
                         TeethSize = "medium",
-                        Price = 9999.99M
+                        Price = 9999.99M,
+                        Rating = 9.9M
                     },
 
                     new Zipper
@@ -66,7 +70,8 @@ namespace ZipperApp.Models
                         Category = "Sandwich Bag",
                         Colour = "Red",
                         TeethSize = "none",
-                        Price = .05M
+                        Price = .05M,
+                        Rating = 5.5M
                     },
                     new Zipper
                     {
@@ -75,7 +80,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "Brown",
                         TeethSize = "small",
-                        Price = 3.45M
+                        Price = 3.45M,
+                        Rating = 7.5M
                     },
                     new Zipper
                     {
@@ -84,7 +90,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "black",
                         TeethSize = "small",
-                        Price = 3.65M
+                        Price = 3.65M,
+                        Rating = 8.12M
                     },
                     new Zipper
                     {
@@ -93,7 +100,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "black",
                         TeethSize = "extra-small",
-                        Price = 1.65M
+                        Price = 1.65M,
+                        Rating = 7.65M
                     },
                     new Zipper
                     {
@@ -102,7 +110,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "black",
                         TeethSize = "small",
-                        Price = 2.05M
+                        Price = 2.05M,
+                        Rating = 9.5M
                     },
 
                     new Zipper
@@ -112,7 +121,8 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "White",
                         TeethSize = "small",
-                        Price = 1.99M
+                        Price = 1.99M,
+                        Rating = 8.69M
                     }
                 );
                 context.SaveChanges();

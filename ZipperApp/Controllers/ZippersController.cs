@@ -78,7 +78,7 @@ namespace ZipperApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Category,Material,TeethSize,Colour,Price")] Zipper zipper)
+        public async Task<IActionResult> Create([Bind("Id,Name,Category,Material,TeethSize,Colour,Price,Rating")] Zipper zipper)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +110,7 @@ namespace ZipperApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Category,Material,TeethSize,Colour,Price")] Zipper zipper)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Category,Material,TeethSize,Colour,Price,Rating")] Zipper zipper)
         {
             if (id != zipper.Id)
             {
