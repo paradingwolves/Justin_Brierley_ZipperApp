@@ -82,3 +82,20 @@ time for validation
     -> validation successfully added
 
 Time for the fun part!! Adding Styles!!
+
+-- 7:45PM --
+added link to my zippers page to the home screen of my web app
+instead of products displaying in a table, they now display in divs!!
+these divs contain all information of the product, and are displayed 3 in a row
+the footer is now dimgrey
+
+-- GOALS FOR NEXT DAY OF DEVELOPMENT --
+- pick a cool font
+- change background colour of header
+- find some pictures of zippers
+- maybe some cool zipper animation for content
+- about employees (About Us)
+    -> display in sections
+    -> hard coded 
+
+

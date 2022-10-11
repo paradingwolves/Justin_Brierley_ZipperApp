@@ -20,7 +20,7 @@
     </p>
 </form>
 
-<table class="table">
+@* <table class="table">
     <thead>
         <tr>
             <th>
@@ -48,36 +48,49 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Zippers)
-        {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Material)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeethSize)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Colour)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-        }
-    </tbody>
-</table>
+*@
+@foreach (var item in Model.Zippers)
+{
+<div class="product">
+    <p><strong>@Html.DisplayFor(modelItem => item.Name)</strong></p>
+    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Category): </strong>@Html.DisplayFor(modelItem => item.Category)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Material): </strong>@Html.DisplayFor(modelItem => item.Material)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].TeethSize): </strong>@Html.DisplayFor(modelItem => item.TeethSize)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Colour): </strong>@Html.DisplayFor(modelItem => item.Colour)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Price): </strong>@Html.DisplayFor(modelItem => item.Price)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Rating): </strong>@Html.DisplayFor(modelItem => item.Rating)</p>
+    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+</div>
+    @* <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Material)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TeethSize)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Colour)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rating)
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    *@
+}

@@ -12,17 +12,13 @@ namespace ZipperApp.Models
         [Required]
         public string Name { get; set; }
 
-        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         [Required]
-        [StringLength(30)]
         public string Category { get; set; }
         [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         [StringLength(30)]
         public string Material { get; set; }
 
         [Display(Name = "Teeth Size")]
-        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
-        [StringLength(30)]
         public string TeethSize { get; set; }
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
