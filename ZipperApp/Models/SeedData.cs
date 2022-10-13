@@ -29,7 +29,8 @@ namespace ZipperApp.Models
                         Colour = "Gold",
                         TeethSize = "small",
                         Price = 299.99M,
-                        Rating = 9.5M
+                        Rating = 9.5M,
+                        Image = "~/img/"
                     },
                     new Zipper
                     {

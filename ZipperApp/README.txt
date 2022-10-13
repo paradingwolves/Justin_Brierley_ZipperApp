@@ -6,13 +6,12 @@ Date Started: 2022-10-08
 ------ > PROPERTIES OF A ZIPPER < ------
     1. Name
     2. Material
-    3. Teeth Size       - XXS
+    3. Teeth Size       
                         - XS
                         - S
                         - M
                         - L
                         - XL
-                        - XXl
 
     4. Category - industrial
                 - sandwich bag
@@ -98,4 +97,28 @@ the footer is now dimgrey
     -> display in sections
     -> hard coded 
 
+Date Modified: 2022-10-11
 
+-- 8:35AM --
+
+Links for employee pictures 
+team shot- https://cultbox.co.uk/wp-content/uploads/2016/03/asa.jpg
+Roy - https://cdn.comedy.co.uk/images/library/people/180x200/t/the_it_crowd_roy.jpg
+Maurice Moss - https://cdn.comedy.co.uk/images/library/people/180x200/t/the_it_crowd_moss.jpg
+Jen Barber - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7u2nf-llL4Xm54jqrAvl2ZsSGSbSQQG9fA&usqp=CAU
+Douyglas Reynholm - https://static.wikia.nocookie.net/villains/images/7/78/Douglas_publicity_photo.jpg/revision/latest?cb=20170426153102
+
+i have added the team shot and the team desciption to the About Us page
+i have added my team members and their pictures and job descriptions to the About Us page.
+
+Date Modified: 2022-10-12
+
+-- 9:00PM --
+
+added some content to my homepage
+fixed my about us page layout 
+made a mobile view for the About Us page
+
+Facotry Image Source Link - https://fshoq.com/free-photos/p/232/abandoned-factory-in-hanover
+Home Page Zipper Image Source Link - https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Zipper.svg/1283px-Zipper.svg.png
+                
