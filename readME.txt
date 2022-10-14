@@ -1,3 +1,11 @@
+----- Commands You Will Need To Build This Project -----
+
+1. Install-Package Microsoft.EntityFrameworkCore.SqlServer --Version 3.1
+2. add-migration ZipperApp -Context ZipperAppContext
+3. update-database -Context ZipperAppContext
+
+
+
 What is this project? 
 
 - This is a website for the fictional company "Zip It!". This application was built using MVC architecture. 
