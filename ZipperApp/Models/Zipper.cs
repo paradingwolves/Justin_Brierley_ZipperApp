@@ -34,7 +34,9 @@ namespace ZipperApp.Models
         [RegularExpression(@"^(0*[1-9]\d{0,10}|0+)(\.\d\d)?$")]
         [Required]
         public decimal Rating { get; set; }
-        public byte[] Image { get; set; }
+
+        [Display(Name = "Product Image")]
+        public string ProductImage { get; set; }
     }
 }
 

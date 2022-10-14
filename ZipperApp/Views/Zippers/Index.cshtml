@@ -20,78 +20,26 @@
     </p>
 </form>
 
-@* <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Zippers[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zippers[0].Category)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zippers[0].Material)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zippers[0].TeethSize)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zippers[0].Colour)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zippers[0].Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zippers[0].Rating)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-*@
-@foreach (var item in Model.Zippers)
-{
-<div class="product">
-    <img src="@Html.DisplayFor(modelItem => item.Category)" alt="product image" />
-    <p><strong>@Html.DisplayFor(modelItem => item.Name)</strong></p>
-    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Category): </strong>@Html.DisplayFor(modelItem => item.Category)</p>
-    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Material): </strong>@Html.DisplayFor(modelItem => item.Material)</p>
-    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].TeethSize): </strong>@Html.DisplayFor(modelItem => item.TeethSize)</p>
-    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Colour): </strong>@Html.DisplayFor(modelItem => item.Colour)</p>
-    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Price): </strong>@Html.DisplayFor(modelItem => item.Price)</p>
-    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Rating): </strong>@Html.DisplayFor(modelItem => item.Rating)</p>
-    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+@*I have decided to place my products in divs rather than a table to give it more of an e-commerce feel*@
+<div class="row">
+    @foreach (var item in Model.Zippers)
+     {
+        <div class="displaystyle">
+             <div class="card">
+                <img class="productImg" src="~/img/zippers/@item.ProductImage" />
+                <div class="container2">
+                    <p><strong>@Html.DisplayFor(modelItem => item.Name)</strong></p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Category): </strong>@Html.DisplayFor(modelItem => item.Category)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Material): </strong>@Html.DisplayFor(modelItem => item.Material)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].TeethSize): </strong>@Html.DisplayFor(modelItem => item.TeethSize)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Colour): </strong>@Html.DisplayFor(modelItem => item.Colour)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Price): </strong>@Html.DisplayFor(modelItem => item.Price)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Rating): </strong>@Html.DisplayFor(modelItem => item.Rating)</p>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </div> @*Instead of displaying data in a tbale, products now get their own div*@
+            </div>
+        </div>
+     }
 </div>
-    @* <tr>
-                    <td>
-
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Category)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Material)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TeethSize)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Colour)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Price)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Rating)
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-                }
-            </tbody>
-        </table>
-    *@
-}

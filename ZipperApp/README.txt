@@ -3,6 +3,13 @@ Program Author: Justin Brierley
 Student ID: 0724299
 Date Started: 2022-10-08
 
+
+----- Commands You Will Need To Build This Project -----
+
+1. Install-Package Microsoft.EntityFrameworkCore.SqlServer --Version 3.1
+2. add-migration ZipperApp -Context ZipperAppContext
+3. update-database -Context ZipperAppContext
+
 ------ > PROPERTIES OF A ZIPPER < ------
     1. Name
     2. Material
@@ -13,8 +20,7 @@ Date Started: 2022-10-08
                         - L
                         - XL
 
-    4. Category - industrial
-                - sandwich bag
+    4. Category - magic
                 - fashion
     5. Price
     7. Colour
@@ -22,9 +28,9 @@ Date Started: 2022-10-08
 ----------------------------------------
 
 -- 9:10PM --
-created the ZipItWebApp
-commented out ssl port
-added a controller called HelloWorldController.cs
+created the ZipperApp
+commented out ssl port so this project will work at school
+added a controller called HelloWorldController.cs 
 
 -- 9:25PM -- 
 time to create a view
@@ -58,6 +64,7 @@ database created
 SeedData.cs class created in Models folder
 SeedData has 10 products and their properties
 have to run to see if seeding data was successful
+        -> add-migration ZipperApp -Context ZipperAppContext
         -> seeding: successful
 
 -- 10:00PM --
@@ -121,4 +128,15 @@ made a mobile view for the About Us page
 
 Facotry Image Source Link - https://fshoq.com/free-photos/p/232/abandoned-factory-in-hanover
 Home Page Zipper Image Source Link - https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Zipper.svg/1283px-Zipper.svg.png
-                
+
+Date Modified: 2022-10-13
+
+-- 10:00AM --
+lets add product images!!
+product images are seeded into database only! users cannot create product with images. maybe another project
+
+-- 10:15PM -- 
+I have changed the view for the product page once again. Now it matches the style of the emplyee page.
+
+-- 10:30PM --
+Time to add the last round of styles

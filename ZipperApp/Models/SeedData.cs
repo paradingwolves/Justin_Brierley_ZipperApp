@@ -30,7 +30,7 @@ namespace ZipperApp.Models
                         TeethSize = "small",
                         Price = 299.99M,
                         Rating = 9.5M,
-                        Image = "~/img/"
+                        ProductImage = "Ziplo.jpg"
                     },
                     new Zipper
                     {
@@ -40,7 +40,8 @@ namespace ZipperApp.Models
                         Colour = "Gold",
                         TeethSize = "medium",
                         Price = 349.99M,
-                        Rating = 8.9M
+                        Rating = 8.9M,
+                        ProductImage = "ZiploM.jpg"
                     },
                     new Zipper
                     {
@@ -50,69 +51,76 @@ namespace ZipperApp.Models
                         Colour = "Gold",
                         TeethSize = "large",
                         Price = 399.99M,
-                        Rating = 9.25M
+                        Rating = 9.25M,
+                        ProductImage = "ZiploL.jpg"
                     },
 
                     new Zipper
                     {
                         Name = "Zypnotic",
-                        Material = "Crystal",
+                        Material = "Animation",
                         Category = "Magic",
-                        Colour = "Purple",
+                        Colour = "Brown",
                         TeethSize = "medium",
                         Price = 9999.99M,
-                        Rating = 9.9M
+                        Rating = 9.9M,
+                        ProductImage = "Zypnotic.png"
                     },
 
                     new Zipper
                     {
                         Name = "Zippin'",
-                        Material = "Plastic",
-                        Category = "Sandwich Bag",
-                        Colour = "Red",
-                        TeethSize = "none",
+                        Material = "Silver",
+                        Category = "Fashion",
+                        Colour = "Silver",
+                        TeethSize = "small",
                         Price = .05M,
-                        Rating = 5.5M
+                        Rating = 5.5M,
+                        ProductImage = "zippin.jpg"
                     },
                     new Zipper
                     {
                         Name = "Standard Jean Zipper",
                         Material = "Nylon",
                         Category = "Fashion",
-                        Colour = "Brown",
+                        Colour = "Silver",
                         TeethSize = "small",
-                        Price = 3.45M,
-                        Rating = 7.5M
+                        Price = 0.45M,
+                        Rating = 7.5M,
+                        ProductImage = "jeanzipper.jpg"
                     },
                     new Zipper
                     {
-                        Name = "Sweater Zipper",
+                        Name = "Purse Zipper",
                         Material = "Nylon",
                         Category = "Fashion",
                         Colour = "black",
                         TeethSize = "small",
                         Price = 3.65M,
-                        Rating = 8.12M
+                        Rating = 8.12M,
+                        ProductImage = "pursezipper.jpg"
                     },
                     new Zipper
                     {
-                        Name = "Shoe Zipper",
+                        Name = "Jacket Zipper",
                         Material = "Polyester",
                         Category = "Fashion",
-                        Colour = "black",
-                        TeethSize = "extra-small",
+                        Colour = "Brown",
+                        TeethSize = "medium",
                         Price = 1.65M,
-                        Rating = 7.65M
+                        Rating = 7.65M,
+                        ProductImage = "jacketzipper.jpg"
                     },
                     new Zipper
                     {
-                        Name = "Boot Zipper",
+                        Name = "Wallet Zipper",
                         Material = "Polyester",
                         Category = "Fashion",
-                        Colour = "black",
+                        Colour = "Brown",
                         TeethSize = "small",
                         Price = 2.05M,
-                        Rating = 9.5M
+                        Rating = 9.5M,
+                        ProductImage = "wallet.jpg"
                     },
 
                     new Zipper
@@ -122,10 +130,11 @@ namespace ZipperApp.Models
                         Category = "Fashion",
                         Colour = "White",
                         TeethSize = "small",
-                        Price = 1.99M,
-                        Rating = 8.69M
+                        Price = .49M,
+                        Rating = 8.69M,
+                        ProductImage = "zipits.png"
                     }
-                );
+                ); ;
                 context.SaveChanges();
             }
         }
