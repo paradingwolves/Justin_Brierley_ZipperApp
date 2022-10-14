@@ -16,7 +16,7 @@
         </select>
 
         Name: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
+        <input type="submit" value="Filter" /> @*Filter search by category*@
     </p>
 </form>
 
@@ -26,7 +26,7 @@
      {
         <div class="displaystyle">
              <div class="card">
-                <img class="productImg" src="~/img/zippers/@item.ProductImage" />
+                <img class="productImg" src="~/img/zippers/@item.ProductImage" /> @*displays corresponding product images*@
                 <div class="container2">
                     <p><strong>@Html.DisplayFor(modelItem => item.Name)</strong></p>
                     <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Category): </strong>@Html.DisplayFor(modelItem => item.Category)</p>
@@ -38,7 +38,7 @@
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </div> @*Instead of displaying data in a tbale, products now get their own div*@
+                </div> @*Instead of displaying data in a tbale, products now get their own div. This gives the site more of an ecommerce feel.*@
             </div>
         </div>
      }

@@ -30,7 +30,7 @@ namespace ZipperApp.Models
                         TeethSize = "small",
                         Price = 299.99M,
                         Rating = 9.5M,
-                        ProductImage = "Ziplo.jpg"
+                        ProductImage = "Ziplo.jpg" //image file name
                     },
                     new Zipper
                     {
@@ -120,7 +120,7 @@ namespace ZipperApp.Models
                         TeethSize = "small",
                         Price = 2.05M,
                         Rating = 9.5M,
-                        ProductImage = "wallet.jpg"
+                        ProductImage = "wallet.jpg" 
                     },
 
                     new Zipper

@@ -65,7 +65,6 @@ h4 {
 }
 
 /* 4. Body Styles */
-
 html {
     font-size: 14px;
 }
@@ -99,19 +98,106 @@ button.accept-policy {
 
 article {
     text-align: center;
-    margin-top: 5%;
-    margin: 0 auto;
 }
 
+
+
+
+
+ 
+
+/* 5. Footer Styles */
+
+footer {
+    background-color: grey;
+    font-family: 'Silkscreen', cursive;
+}
+
+footer > div.container p {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+
+
+
+
+
+
+
+
+/*Landing Page Styles*/
+.companyContact {
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    border: 3px solid black;
+    border-radius: 5%;
+    padding: 10px;
+    margin-bottom: 15%;
+}
+.companyContact img {
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 2%;
+}
+.homeArticle {
+    float: left;
+    width: 33%;
+    margin-left: 2%;
+    text-align: center;
+    font-size: 1.25vw;
+    padding: 5px
+}
+.homeArticle h3 {
+    font-weight: bold;
+}
+.information {
+    float: left;
+    font-family: 'Work sans', sans-serif;
+    background-color: antiquewhite;
+    margin-left: 5%;
+    padding: 10px;
+    width: 27%;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.information h4 {
+    text-align: center;
+    font-size: 1.75vw;
+}
+.information ul {
+    width: 100%;
+    list-style-type: none;
+}
+.container3 {
+    background-color:white;
+    padding: 5px;
+    text-indent: 2em;
+    border-radius: 5%;
+}
+
+//*Product/About Us Styles*/
 .displaystyle a {
     margin-left: 7%;
     margin-right: 7%;
 }
 
-.displaystyle, .mission{
+.displaystyle, .mission {
     line-height: 1.05em;
     font-family: 'Work Sans', sans-serif;
 }
+
 .control-label {
     font-family: 'Work Sans', sans-serif;
 }
@@ -126,31 +212,6 @@ article {
     margin-bottom: 5%;
 }
 
-/* Three columns side by side */
-
-.companyContact {
-    float: left;
-    width: 25%;
-    border: 3px solid black;
-    border-radius: 5%;
-    padding: 10px;
-}
-.companyContact img {
-    width: 100%;
-    border-radius: 5%;
-    margin-bottom: 2%;
-}
-.homeArticle {
-    float: left;
-    width: 45%;
-    margin-left: 7%;
-    text-align: center;
-    font-size: 1.25vw;
-    padding: 5px
-}
-.homeArticle h3 {
-    font-weight: bold;
-}
 .displaystyle {
     float: left;
     width: 30%;
@@ -166,6 +227,7 @@ article {
 .mission {
     clear: both;
     width: 55%;
+    margin: 0 auto;
     background-color: antiquewhite;
     border: 2px solid black;
     margin-bottom: 5%;
@@ -200,37 +262,71 @@ article {
     color: grey;
 }
 
- 
-
-/* 5. Footer Styles */
-
-footer {
-    background-color: grey;
-    font-family: 'Silkscreen', cursive;
-}
-
-footer > div.container p {
-    text-align: center;
-    font-weight: bold;
-    color: black;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-}
-
-/* 6. Media Queries */
-
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
 }
 /* Display the columns below each other instead of side by side on small screens */
+
+@media screen and (max-width: 810px) {
+    .displaystyle {
+        width: 45%;
+    }
+
+    .displaystyle:hover {
+        width: 50%;
+    }
+
+    .mission {
+        float: left;
+        border: none;
+        width: 50%;
+        margin-bottom: 55%;
+    }
+
+    .companyContact {
+        width: 45%;
+    }
+
+    .homeArticle {
+        float: none;
+        clear: both;
+        width: 53%;
+        margin: 0 0 0 0;
+    }
+
+    .information {
+        float: none;
+        clear: both;
+        width: 100%;
+        padding: 15px;
+        margin-left: 0
+    }
+    .container3 {
+        border-radius: 0%;
+    }
+    h3 {
+        font-size: 5.25vw;
+    }
+
+    .information h4, h4 {
+        font-size: 4.5vw;
+    }
+
+    .information li {
+        font-size: 3vw
+    }
+
+    p {
+        text-indent: 0;
+        font-size: 3vw;
+        line-height: 1.15em
+    }
+}
+
+
+
 @media screen and (max-width: 650px) {
     .displaystyle {
         width: 100%;
@@ -257,15 +353,29 @@ footer > div.container p {
         width: 100%;
         margin: 0 0 0 0;
     }
-
-    h4 {
+    .information {
+        float: none;
+        clear: both;
+        width: 100%;
+        padding: 15px;
+        margin-left: 0
+    }
+    h3 {
+        font-size: 6.5vw;
+    }
+    .information h4, h4{
         font-size: 6vw;
+    }
+    .information li {
+        font-size: 4.75vw
     }
 
     p {
-        font-size: 4vw
+        font-size: 4vw;
+        line-height: 1.25em
     }
 }
+
 
 
 

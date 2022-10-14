@@ -17,14 +17,9 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            @*<div class="form-group">
-            <label asp-for="ProductImage" class="control-label"></label>
-            <input type="file" asp-for="ProductImage" class="form-control" />
-            <span asp-validation-for="ProductImage" class="text-danger"></span>
-        </div> *@
             <div class="form-group">
                 <label asp-for="Category" class="control-label"></label>
-                <select asp-for="Category" class="form-control">
+                <select asp-for="Category" class="form-control"> @*To avoid SQL Injection, I limited some user input to selections rather than text field. This also helps keep the pages consistent*@
                     <option value="Fashion">Fashion</option>
                     <option value="Fashion">Magic</option>
                 </select>
@@ -39,7 +34,7 @@
                 <label asp-for="TeethSize" class="control-label"></label>
                 <select asp-for="TeethSize" class="form-control">
                     <option value="Extra-Small">Extra-Small</option>
-                    <option value="Small">Small</option>
+                    <option value="Small">Small</option> 
                     <option value="Medium">Medium</option>
                     <option value="Large">Large</option>
                     <option value="Extra-Large">Extra-Large</option>

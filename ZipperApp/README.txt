@@ -140,3 +140,9 @@ I have changed the view for the product page once again. Now it matches the styl
 
 -- 10:30PM --
 Time to add the last round of styles
+
+Date Modiefied: 2022-10-14
+-- 1:37AM --
+got a little carried away with the styles...we now have a desktop, tablet and mobile view!!
+         -> breakpoints: 810px, 650px
+there may be some last minute styles added later...who knows.. 
