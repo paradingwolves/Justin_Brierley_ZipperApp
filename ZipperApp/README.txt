@@ -10,22 +10,6 @@ Date Started: 2022-10-08
 2. add-migration ZipperApp -Context ZipperAppContext
 3. update-database -Context ZipperAppContext
 
------- > PROPERTIES OF A ZIPPER < ------
-    1. Name
-    2. Material
-    3. Teeth Size       
-                        - XS
-                        - S
-                        - M
-                        - L
-                        - XL
-
-    4. Category - magic
-                - fashion
-    5. Price
-    7. Colour
-
-----------------------------------------
 
 -- 9:10PM --
 created the ZipperApp
@@ -59,6 +43,7 @@ now time to *scaffold*
 Date Modified: 2022-10-09
 
 -- 8:35PM --
+
 time to add database
 database created 
 SeedData.cs class created in Models folder
@@ -109,11 +94,9 @@ Date Modified: 2022-10-11
 -- 8:35AM --
 
 Links for employee pictures 
-team shot- https://cultbox.co.uk/wp-content/uploads/2016/03/asa.jpg
 Roy - https://cdn.comedy.co.uk/images/library/people/180x200/t/the_it_crowd_roy.jpg
 Maurice Moss - https://cdn.comedy.co.uk/images/library/people/180x200/t/the_it_crowd_moss.jpg
 Jen Barber - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7u2nf-llL4Xm54jqrAvl2ZsSGSbSQQG9fA&usqp=CAU
-Douyglas Reynholm - https://static.wikia.nocookie.net/villains/images/7/78/Douglas_publicity_photo.jpg/revision/latest?cb=20170426153102
 
 i have added the team shot and the team desciption to the About Us page
 i have added my team members and their pictures and job descriptions to the About Us page.
