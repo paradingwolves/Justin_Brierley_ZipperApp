@@ -221,8 +221,8 @@ footer > div.container p {
 .container2 {
     padding: 10px;
 }
-.displaystyle:hover {
-    width: 40%;
+.displaystyle:hover  .card {
+    background-color: lightgoldenrodyellow;
 }
 .mission {
     clear: both;
