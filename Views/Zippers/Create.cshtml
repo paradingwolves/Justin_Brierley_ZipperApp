@@ -21,7 +21,7 @@
                 <label asp-for="Category" class="control-label"></label>
                 <select asp-for="Category" class="form-control"> @*To avoid SQL Injection, I limited some user input to selections rather than text field. This also helps keep the pages consistent*@
                     <option value="Fashion">Fashion</option>
-                    <option value="Magic">Magic</option>
+                    <option value="Fashion">Magic</option>
                 </select>
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
