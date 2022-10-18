@@ -139,3 +139,8 @@ Date Modiefied: 2022-10-14
 got a little carried away with the styles...we now have a desktop, tablet and mobile view!!
          -> breakpoints: 810px, 650px
 there may be some last minute styles added later...who knows.. 
+
+Date Modiefied: 2022-10-18
+
+-- 10:35AM --
+as per our conversation in class, I am changing the names in my migration from Wands -> Zippers
