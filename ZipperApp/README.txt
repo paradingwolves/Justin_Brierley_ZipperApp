@@ -4,12 +4,22 @@ Student ID: 0724299
 Date Started: 2022-10-08
 
 
+----- Properties of a Zipper -----
+1. Name
+2. Colour
+3. Material 
+4. Category
+5. Teeth Size
+6. Rating
+7. Price
+----------------------------------------------------------------------
+
 ----- Commands You Will Need To Build This Project -----
 
 1. Install-Package Microsoft.EntityFrameworkCore.SqlServer --Version 3.1
-2. add-migration ZipperApp -Context ZipperAppContext
+2. add-migration InitialCreate -Context ZipperAppContext
 3. update-database -Context ZipperAppContext
-
+----------------------------------------------------------------------
 
 -- 9:10PM --
 created the ZipperApp
